@@ -1,0 +1,250 @@
+{
+  "accuracy": 74.43,
+  "f1_macro": 74.02,
+  "wer": 25.57,
+  "mean_jaccard": 60.37,
+  "avg_latency_ms": 1.114,
+  "param_count": 363042,
+  "flops": 20675584,
+  "total_samples": 2566,
+  "per_class": [
+    {
+      "class": "after",
+      "precision": 42.7,
+      "recall": 62.3,
+      "f1": 50.7,
+      "support": 61
+    },
+    {
+      "class": "all",
+      "precision": 78.5,
+      "recall": 76.5,
+      "f1": 77.5,
+      "support": 81
+    },
+    {
+      "class": "alligator",
+      "precision": 86.7,
+      "recall": 73.0,
+      "f1": 79.3,
+      "support": 89
+    },
+    {
+      "class": "bed",
+      "precision": 90.1,
+      "recall": 83.9,
+      "f1": 86.9,
+      "support": 87
+    },
+    {
+      "class": "beside",
+      "precision": 39.3,
+      "recall": 34.4,
+      "f1": 36.7,
+      "support": 64
+    },
+    {
+      "class": "bird",
+      "precision": 91.2,
+      "recall": 87.3,
+      "f1": 89.2,
+      "support": 71
+    },
+    {
+      "class": "carrot",
+      "precision": 74.4,
+      "recall": 80.3,
+      "f1": 77.2,
+      "support": 76
+    },
+    {
+      "class": "donkey",
+      "precision": 77.2,
+      "recall": 77.2,
+      "f1": 77.2,
+      "support": 79
+    },
+    {
+      "class": "elephant",
+      "precision": 78.6,
+      "recall": 81.5,
+      "f1": 80.0,
+      "support": 81
+    },
+    {
+      "class": "empty",
+      "precision": 81.4,
+      "recall": 64.8,
+      "f1": 72.2,
+      "support": 88
+    },
+    {
+      "class": "eye",
+      "precision": 72.2,
+      "recall": 89.1,
+      "f1": 79.7,
+      "support": 64
+    },
+    {
+      "class": "fall",
+      "precision": 50.0,
+      "recall": 64.4,
+      "f1": 56.3,
+      "support": 90
+    },
+    {
+      "class": "fireman",
+      "precision": 94.6,
+      "recall": 83.3,
+      "f1": 88.6,
+      "support": 84
+    },
+    {
+      "class": "gift",
+      "precision": 70.5,
+      "recall": 83.8,
+      "f1": 76.6,
+      "support": 80
+    },
+    {
+      "class": "hair",
+      "precision": 91.3,
+      "recall": 73.3,
+      "f1": 81.3,
+      "support": 86
+    },
+    {
+      "class": "hat",
+      "precision": 80.9,
+      "recall": 80.9,
+      "f1": 80.9,
+      "support": 68
+    },
+    {
+      "class": "have",
+      "precision": 72.5,
+      "recall": 78.1,
+      "f1": 75.2,
+      "support": 64
+    },
+    {
+      "class": "hear",
+      "precision": 79.8,
+      "recall": 83.3,
+      "f1": 81.5,
+      "support": 90
+    },
+    {
+      "class": "hello",
+      "precision": 80.0,
+      "recall": 76.9,
+      "f1": 78.4,
+      "support": 78
+    },
+    {
+      "class": "horse",
+      "precision": 84.0,
+      "recall": 84.0,
+      "f1": 84.0,
+      "support": 75
+    },
+    {
+      "class": "hungry",
+      "precision": 71.0,
+      "recall": 84.5,
+      "f1": 77.2,
+      "support": 84
+    },
+    {
+      "class": "like",
+      "precision": 56.1,
+      "recall": 51.4,
+      "f1": 53.6,
+      "support": 72
+    },
+    {
+      "class": "look",
+      "precision": 63.5,
+      "recall": 53.3,
+      "f1": 58.0,
+      "support": 75
+    },
+    {
+      "class": "minemy",
+      "precision": 90.2,
+      "recall": 78.6,
+      "f1": 84.0,
+      "support": 70
+    },
+    {
+      "class": "mom",
+      "precision": 94.4,
+      "recall": 71.8,
+      "f1": 81.6,
+      "support": 71
+    },
+    {
+      "class": "now",
+      "precision": 85.7,
+      "recall": 83.3,
+      "f1": 84.5,
+      "support": 72
+    },
+    {
+      "class": "person",
+      "precision": 47.2,
+      "recall": 43.9,
+      "f1": 45.5,
+      "support": 57
+    },
+    {
+      "class": "puppy",
+      "precision": 65.5,
+      "recall": 55.9,
+      "f1": 60.3,
+      "support": 68
+    },
+    {
+      "class": "refrigerator",
+      "precision": 79.2,
+      "recall": 75.0,
+      "f1": 77.0,
+      "support": 76
+    },
+    {
+      "class": "see",
+      "precision": 72.0,
+      "recall": 80.8,
+      "f1": 76.1,
+      "support": 73
+    },
+    {
+      "class": "shhh",
+      "precision": 88.6,
+      "recall": 98.7,
+      "f1": 93.4,
+      "support": 79
+    },
+    {
+      "class": "wet",
+      "precision": 74.0,
+      "recall": 82.6,
+      "f1": 78.1,
+      "support": 69
+    },
+    {
+      "class": "white",
+      "precision": 54.7,
+      "recall": 58.0,
+      "f1": 56.3,
+      "support": 81
+    },
+    {
+      "class": "will",
+      "precision": 84.7,
+      "recall": 79.4,
+      "f1": 82.0,
+      "support": 63
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>SignLens — Sign Language Detector</title>
+    <meta name="description" content="Real-time sign language detection using AI. Connecting the world through accessible communication.">
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- ══════════════  GLOBAL RIBBON  ══════════════ -->
+<nav id="ribbon" role="banner">
+    <div id="ribbon-left">
+        <img src="/static/favicon.svg" id="ribbon-logo" alt="SignLens logo" width="28" height="28">
+        <span id="ribbon-title">SignLens</span>
+    </div>
+    <div id="ribbon-right">
+        <button class="ribbon-btn" onclick="openGuide('abc')" aria-label="Open usage guide">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            Guide
+        </button>
+        <button class="ribbon-btn" onclick="openEval()" aria-label="Evaluate models">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            Evaluate
+        </button>
+        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme" id="ribbon-theme-btn">
+            <span id="ribbon-theme-icon">☾</span>
+        </button>
+    </div>
+</nav>
+
+
+<!-- ══════════════  LANDING PAGE  ══════════════ -->
+<div id="landing">
+    <!-- Petals -->
+    <div class="petals" aria-hidden="true">
+        <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+        <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+        <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+        <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+    </div>
+
+    <div id="landing-inner">
+
+        <!-- LEFT: Motto -->
+        <div id="motto-col">
+            <h1 id="landing-title">Every Hand<br>Has a Voice</h1>
+            <p class="motto-primary">
+                "Communication is not a privilege.<br>
+                <em>It is a fundamental human right.</em>"
+            </p>
+            <p class="motto-body">
+                For the deaf and mute community, sign language is not a limitation —
+                it is a complete, rich, and beautiful language. Every gesture carries
+                meaning. Every sign carries culture. Every hand tells a story.
+            </p>
+            <p class="motto-body">
+                SignLens bridges the silent world and the spoken world — because
+                understanding someone is the deepest form of respect.
+            </p>
+            <button id="begin-btn" onclick="enterApp()">
+                Begin Signing
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+        </div>
+
+        <!-- RIGHT: Stats -->
+        <div id="stats-col">
+            <div id="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-num">70M+</span>
+                    <span class="stat-desc">Deaf people globally</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">300+</span>
+                    <span class="stat-desc">Sign languages worldwide</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">1 in 5</span>
+                    <span class="stat-desc">Live with hearing loss</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">95%</span>
+                    <span class="stat-desc">Deaf children born to hearing parents</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ══════════════  APP  ══════════════ -->
+<div id="app" style="display:none;">
+
+    <!-- Sub-header: mode toggle + back -->
+    <div id="app-bar">
+        <button id="back-btn" onclick="goBack()" title="Back to home" aria-label="Back to home">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <div id="mode-toggle" role="group" aria-label="Detection mode">
+            <button id="btn-alphabet" class="mode-btn active" onclick="setMode('alphabet')">ABC</button>
+            <button id="btn-word"     class="mode-btn"        onclick="setMode('word')">Words</button>
+            <button id="btn-view"     class="mode-btn"        onclick="setMode('view')">👁 View</button>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- Camera -->
+        <div id="camera-card" class="card">
+            <div id="camera-wrap">
+                <video id="webcam" autoplay playsinline muted></video>
+                <canvas id="overlay"></canvas>
+            </div>
+            <div id="status-bar">
+                <span id="status-text">Initializing…</span>
+                <div id="progress-bar"><div id="progress-fill"></div></div>
+            </div>
+        </div>
+
+        <!-- Whiteboard -->
+        <div id="board-card" class="card">
+            <div id="board-header">
+                <span id="board-label">Whiteboard</span>
+                <button id="btn-clear" onclick="clearBoard()">Clear</button>
+            </div>
+            <div id="whiteboard">
+                <span id="board-text"></span><span id="cursor">|</span>
+            </div>
+            <div id="raw-prediction">
+                <span id="raw-label">Detecting:</span>
+                <span id="raw-value">—</span>
+                <span id="conf-value"></span>
+            </div>
+        </div>
+
+        <!-- Sign Visualizer -->
+        <div id="viewer-card" class="card" style="display:none;">
+            <div id="viewer-header">
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <span id="viewer-label">Sign Visualizer</span>
+                    <!-- ABC / Words sub-toggle -->
+                    <div id="viewer-subtoggle" role="group" aria-label="Visualizer type">
+                        <button class="subtog active" id="subtog-abc" onclick="setViewerMode('abc')">ABC</button>
+                        <button class="subtog"        id="subtog-words" onclick="setViewerMode('words')">Words</button>
+                    </div>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <span id="viewer-frame-info">Frame —</span>
+                    <button id="btn-fullscreen" onclick="toggleFullscreen()" title="Toggle fullscreen" aria-label="Toggle fullscreen">
+                        <svg id="fs-icon-expand" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                        <svg id="fs-icon-shrink" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>
+                        Fullscreen
+                    </button>
+                </div>
+            </div>
+            <div id="viewer-body">
+                <canvas id="viz-canvas" width="400" height="340"></canvas>
+                <div id="viewer-word-display"></div>
+            </div>
+            <div id="viewer-scrubber">
+                <span id="scrub-label">0</span>
+                <input type="range" id="frame-slider" min="0" max="29" value="0" step="1" oninput="onScrub(this.value)" aria-label="Frame position">
+                <span id="scrub-max">29</span>
+            </div>
+            <!-- Word mode controls -->
+            <div id="viewer-controls" class="viewer-ctrl-row">
+                <select id="word-select" aria-label="Select a word to visualise">
+                    <option value="">— Pick a sign to replay —</option>
+                </select>
+                <button id="btn-play"  onclick="loadAndPlay()">▶ Play</button>
+                <button id="btn-pause" onclick="togglePause()">⏸ Pause</button>
+                <label id="loop-label">
+                    <input type="checkbox" id="chk-loop" checked> Loop
+                </label>
+            </div>
+            <!-- Alphabet mode controls -->
+            <div id="viewer-alpha-controls" class="viewer-ctrl-row" style="display:none;">
+                <select id="letter-select" aria-label="Select a letter to visualise">
+                    <option value="">— Pick a letter —</option>
+                </select>
+                <button id="btn-show-letter" onclick="loadAlphabetDemo()">Show</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<!-- ══════════════  GUIDE MODAL  ══════════════ -->
+<div id="guide-overlay" onclick="closeGuide()" style="display:none;" aria-label="Close guide"></div>
+
+<div id="guide-modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="guide-heading">
+
+    <div id="guide-header">
+        <h2 id="guide-heading">How to Use SignLens</h2>
+        <button id="guide-close" onclick="closeGuide()" aria-label="Close guide">✕</button>
+    </div>
+
+    <!-- Tabs -->
+    <div id="guide-tabs" role="tablist">
+        <button class="gtab active" id="gtab-abc"   onclick="switchTab('abc')"   role="tab" aria-selected="true"  aria-controls="gpanel-abc">🔤 ABC</button>
+        <button class="gtab"        id="gtab-words" onclick="switchTab('words')" role="tab" aria-selected="false" aria-controls="gpanel-words">📝 Words</button>
+        <button class="gtab"        id="gtab-view"  onclick="switchTab('view')"  role="tab" aria-selected="false" aria-controls="gpanel-view">👁 View</button>
+    </div>
+
+    <div id="guide-body">
+
+        <!-- ── ABC Panel ── -->
+        <section id="gpanel-abc" class="gpanel" role="tabpanel" aria-labelledby="gtab-abc">
+            <h3>Alphabet Mode — Letter Detection</h3>
+            <p>Hold a single ASL hand shape steady in front of your webcam. The progress bar fills as the model confirms the sign. When full, the letter is committed to the whiteboard.</p>
+            <ul class="guide-list">
+                <li><strong>SPACE</strong> — open flat palm facing camera</li>
+                <li><strong>DEL</strong> — thumbs-down gesture removes last character</li>
+                <li>Keep your hand centred and well-lit for best accuracy</li>
+                <li>Hold each letter still for ~1 second to reach the stability threshold</li>
+            </ul>
+
+            <!-- Animated demo -->
+            <div class="demo-box" aria-label="ABC mode demo animation">
+                <div class="demo-abc">
+                    <div class="demo-hand">
+                        <div class="d-palm"></div>
+                        <div class="d-finger f1"></div>
+                        <div class="d-finger f2"></div>
+                        <div class="d-finger f3"></div>
+                        <div class="d-finger f4"></div>
+                        <div class="d-thumb"></div>
+                    </div>
+                    <div class="demo-arrow">→</div>
+                    <div class="demo-letter-wrap">
+                        <span class="demo-letter l1">A</span>
+                        <span class="demo-letter l2">B</span>
+                        <span class="demo-letter l3">C</span>
+                    </div>
+                    <div class="demo-bar-wrap">
+                        <div class="demo-progress-label">Confidence</div>
+                        <div class="demo-bar"><div class="demo-bar-fill"></div></div>
+                        <div class="demo-commit">✓</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Words Panel ── -->
+        <section id="gpanel-words" class="gpanel" role="tabpanel" aria-labelledby="gtab-words" style="display:none;">
+            <h3>Words Mode — Dynamic Sign Detection</h3>
+            <p>Sign full words using natural ASL gestures. The model captures 30 consecutive frames of your hand, pose, and face and classifies the movement pattern.</p>
+            <ul class="guide-list">
+                <li>Sign <strong>smoothly and continuously</strong> — movement is the key feature</li>
+                <li>A word commits after <strong>4 consistent predictions ≥ 70%</strong> confidence</li>
+                <li>Brief pause between words resets the buffer</li>
+                <li>Trained on 34 words: <em>hello, bird, elephant, will, refrigerator…</em></li>
+            </ul>
+
+            <!-- Animated demo: timeline buffer -->
+            <div class="demo-box" aria-label="Words mode demo animation">
+                <div class="demo-words">
+                    <div class="demo-timeline">
+                        <div class="demo-timeline-label">Buffering frames…</div>
+                        <div class="demo-frames">
+                            <div class="demo-frame"></div><div class="demo-frame"></div><div class="demo-frame"></div>
+                            <div class="demo-frame"></div><div class="demo-frame"></div><div class="demo-frame"></div>
+                            <div class="demo-frame"></div><div class="demo-frame"></div><div class="demo-frame"></div>
+                            <div class="demo-frame"></div><div class="demo-frame"></div><div class="demo-frame"></div>
+                        </div>
+                        <div class="demo-word-pop">ELEPHANT</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── View Panel ── -->
+        <section id="gpanel-view" class="gpanel" role="tabpanel" aria-labelledby="gtab-view" style="display:none;">
+            <h3>View Mode — Sign Skeleton Visualiser</h3>
+            <p>Replay the actual dataset landmarks for any of the 34 trained words. Use this to study the correct hand shape and movement before practising yourself.</p>
+            <ul class="guide-list">
+                <li>Pick a word from the dropdown → press <strong>▶ Play</strong></li>
+                <li>Drag the <strong>frame slider</strong> to scrub to any phase of the sign</li>
+                <li>Hit <strong>⏸ Pause</strong> to freeze on a specific frame</li>
+                <li>Enable <strong>Loop</strong> for continuous playback</li>
+            </ul>
+
+            <!-- Animated demo: skeleton -->
+            <div class="demo-box" aria-label="View mode skeleton demo animation">
+                <div class="demo-view">
+                    <svg class="demo-skeleton" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <!-- Pose lines -->
+                        <line class="sk-pose" x1="80" y1="40" x2="120" y2="40"/>
+                        <line class="sk-pose" x1="80" y1="40" x2="60" y2="70"/>
+                        <line class="sk-pose" x1="120" y1="40" x2="140" y2="70"/>
+                        <!-- Right hand skeleton (animates) -->
+                        <g class="sk-rhand">
+                            <line x1="60" y1="70" x2="50" y2="85"/><line x1="60" y1="70" x2="55" y2="90"/>
+                            <line x1="60" y1="70" x2="62" y2="92"/><line x1="60" y1="70" x2="68" y2="89"/>
+                            <line x1="60" y1="70" x2="72" y2="82"/>
+                            <circle cx="50" cy="85" r="3"/><circle cx="55" cy="90" r="3"/>
+                            <circle cx="62" cy="92" r="3"/><circle cx="68" cy="89" r="3"/>
+                            <circle cx="72" cy="82" r="3"/><circle cx="60" cy="70" r="4"/>
+                        </g>
+                        <!-- Left hand skeleton -->
+                        <g class="sk-lhand">
+                            <line x1="140" y1="70" x2="128" y2="85"/><line x1="140" y1="70" x2="135" y2="90"/>
+                            <line x1="140" y1="70" x2="142" y2="92"/><line x1="140" y1="70" x2="148" y2="89"/>
+                            <line x1="140" y1="70" x2="152" y2="82"/>
+                            <circle cx="128" cy="85" r="3"/><circle cx="135" cy="90" r="3"/>
+                            <circle cx="142" cy="92" r="3"/><circle cx="148" cy="89" r="3"/>
+                            <circle cx="152" cy="82" r="3"/><circle cx="140" cy="70" r="4"/>
+                        </g>
+                        <!-- Pose dots -->
+                        <circle class="sk-pose-dot" cx="80"  cy="40" r="4"/>
+                        <circle class="sk-pose-dot" cx="120" cy="40" r="4"/>
+                        <circle class="sk-pose-dot" cx="60"  cy="70" r="4"/>
+                        <circle class="sk-pose-dot" cx="140" cy="70" r="4"/>
+                        <!-- Face dots -->
+                        <circle class="sk-face" cx="95" cy="18" r="2"/><circle class="sk-face" cx="100" cy="16" r="2"/>
+                        <circle class="sk-face" cx="105" cy="18" r="2"/><circle class="sk-face" cx="93" cy="22" r="2"/>
+                        <circle class="sk-face" cx="107" cy="22" r="2"/><circle class="sk-face" cx="100" cy="28" r="2"/>
+                        <circle class="sk-face" cx="96" cy="25" r="2"/> <circle class="sk-face" cx="104" cy="25" r="2"/>
+                    </svg>
+                    <div class="demo-frame-bar">
+                        <div class="demo-frame-cursor"></div>
+                    </div>
+                    <div class="demo-view-label">Frame 1 – 30</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="guide-tip">
+            🌸 <strong>Tip:</strong> In Words mode, ensure both hands, your face, and shoulders are visible in the camera frame for maximum accuracy.
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ══════════════  EVALUATION MODAL  ══════════════ -->
+<div id="eval-overlay" onclick="closeEval()" style="display:none;" aria-label="Close evaluation"></div>
+
+<div id="eval-modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="eval-heading">
+    <div id="eval-header">
+        <h2 id="eval-heading">Model Performance</h2>
+        <button id="eval-close" onclick="closeEval()" aria-label="Close evaluation">&times;</button>
+    </div>
+
+    <div id="eval-tabs" role="tablist">
+        <button class="etab active" id="etab-alphabet" onclick="switchEvalTab('alphabet')" role="tab" aria-selected="true">🔤 Alphabet Model</button>
+        <button class="etab"        id="etab-word"     onclick="switchEvalTab('word')"     role="tab" aria-selected="false">📝 Word Model (TCN)</button>
+        <button class="etab"        id="etab-cnn_word" onclick="switchEvalTab('cnn_word')" role="tab" aria-selected="false">🧠 CNN Baseline</button>
+    </div>
+
+    <div id="eval-body">
+        <!-- Loading state -->
+        <div id="eval-loading" style="display:none;">
+            <div class="eval-spinner"></div>
+            <p>Running evaluation — this may take a few seconds…</p>
+        </div>
+
+        <!-- Alphabet panel -->
+        <section id="epanel-alphabet" class="epanel" style="display:none;">
+            <div class="metric-grid" id="alpha-metrics">
+                <!-- JS populates -->
+            </div>
+            <h3 class="eval-section-title">Per-Class Performance</h3>
+            <div class="eval-table-wrap">
+                <table class="eval-table" id="alpha-table">
+                    <thead><tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1</th><th>Samples</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Word panel -->
+        <section id="epanel-word" class="epanel" style="display:none;">
+            <div class="metric-grid" id="word-metrics">
+                <!-- JS populates -->
+            </div>
+            <h3 class="eval-section-title">Per-Class Performance</h3>
+            <div class="eval-table-wrap">
+                <table class="eval-table" id="word-table">
+                    <thead><tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1</th><th>Samples</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- CNN Baseline panel -->
+        <section id="epanel-cnn_word" class="epanel" style="display:none;">
+            <div class="metric-grid" id="cnn_word-metrics">
+                <!-- JS populates -->
+            </div>
+            <h3 class="eval-section-title">Per-Class Performance</h3>
+            <div class="eval-table-wrap">
+                <table class="eval-table" id="cnn_word-table">
+                    <thead><tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1</th><th>Samples</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic/holistic.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

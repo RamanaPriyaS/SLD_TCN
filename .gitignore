@@ -1,0 +1,65 @@
+# ── Python ──────────────────────────────────────
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environment / Secrets ───────────────────────
+.env
+.env.local
+*.secret
+
+# ── Trained Model Weights ───────────────────────
+# Keep architecture files, word_classes.json, metrics_cache.json.
+# Ignore large binary weight files only.
+models/sign_model.pth
+models/alphabet_model.pth
+
+# ── Dataset Files ─────────────────────────────────
+# Raw and processed numpy arrays (large — not suited for git)
+*.npy
+
+# EXCEPTION: curated demo subset (~7.8 MB) must be committed
+!data/demos/
+!data/demos/**
+!data/demos/**/*.npy
+
+data/raw_wlasl/
+data/alphabets_npy/
+data/alphabets_augmented_npy/
+data/processed/
+data/processed_backup/
+data/alphabet_images/
+
+# ── Generated / Cached ──────────────────────────
+# NOTE: models/word_classes.json and models/metrics_cache.json SHOULD be committed
+*.csv
+*.log
+
+# ── IDE / Editor ─────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS Files ────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── Flask / Werkzeug ────────────────────────────
+instance/
+.webassets-cache
+
+# ── Jupyter ─────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb

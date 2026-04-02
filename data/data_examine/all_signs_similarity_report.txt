@@ -1,0 +1,711 @@
+WLASL All Signs (250 total) Similarity Analysis Report
+============================================================
+
+--- Top 100 Most Unique Signs (Least likely to be confused) ---
+(Lower average similarity to all other signs = More Unique)
+hungry              : Avg similarity = 0.9206
+wet                 : Avg similarity = 0.9284
+white               : Avg similarity = 0.9328
+hello               : Avg similarity = 0.9359
+donkey              : Avg similarity = 0.9365
+after               : Avg similarity = 0.9424
+minemy              : Avg similarity = 0.9445
+will                : Avg similarity = 0.9445
+beside              : Avg similarity = 0.9445
+bed                 : Avg similarity = 0.9450
+all                 : Avg similarity = 0.9452
+have                : Avg similarity = 0.9459
+mom                 : Avg similarity = 0.9464
+eye                 : Avg similarity = 0.9472
+like                : Avg similarity = 0.9478
+hair                : Avg similarity = 0.9486
+puppy               : Avg similarity = 0.9488
+elephant            : Avg similarity = 0.9489
+fireman             : Avg similarity = 0.9497
+gift                : Avg similarity = 0.9505
+hat                 : Avg similarity = 0.9510
+empty               : Avg similarity = 0.9514
+fall                : Avg similarity = 0.9515
+alligator           : Avg similarity = 0.9515
+carrot              : Avg similarity = 0.9515
+refrigerator        : Avg similarity = 0.9520
+horse               : Avg similarity = 0.9530
+see                 : Avg similarity = 0.9531
+person              : Avg similarity = 0.9535
+now                 : Avg similarity = 0.9536
+dance               : Avg similarity = 0.9537
+on                  : Avg similarity = 0.9538
+police              : Avg similarity = 0.9539
+drop                : Avg similarity = 0.9541
+cheek               : Avg similarity = 0.9542
+flag                : Avg similarity = 0.9543
+there               : Avg similarity = 0.9549
+ride                : Avg similarity = 0.9552
+cloud               : Avg similarity = 0.9557
+smile               : Avg similarity = 0.9558
+bee                 : Avg similarity = 0.9561
+awake               : Avg similarity = 0.9564
+mad                 : Avg similarity = 0.9568
+sleep               : Avg similarity = 0.9569
+book                : Avg similarity = 0.9571
+apple               : Avg similarity = 0.9574
+flower              : Avg similarity = 0.9574
+fish                : Avg similarity = 0.9574
+better              : Avg similarity = 0.9577
+quiet               : Avg similarity = 0.9577
+animal              : Avg similarity = 0.9578
+grandpa             : Avg similarity = 0.9579
+arm                 : Avg similarity = 0.9592
+car                 : Avg similarity = 0.9594
+shower              : Avg similarity = 0.9595
+food                : Avg similarity = 0.9598
+dad                 : Avg similarity = 0.9600
+cat                 : Avg similarity = 0.9601
+that                : Avg similarity = 0.9602
+doll                : Avg similarity = 0.9604
+sticky              : Avg similarity = 0.9605
+weus                : Avg similarity = 0.9605
+cowboy              : Avg similarity = 0.9606
+pretend             : Avg similarity = 0.9607
+sick                : Avg similarity = 0.9608
+owl                 : Avg similarity = 0.9610
+pen                 : Avg similarity = 0.9610
+why                 : Avg similarity = 0.9612
+night               : Avg similarity = 0.9613
+story               : Avg similarity = 0.9613
+can                 : Avg similarity = 0.9617
+kitty               : Avg similarity = 0.9617
+another             : Avg similarity = 0.9617
+red                 : Avg similarity = 0.9618
+mitten              : Avg similarity = 0.9619
+uncle               : Avg similarity = 0.9620
+hate                : Avg similarity = 0.9620
+thankyou            : Avg similarity = 0.9622
+giraffe             : Avg similarity = 0.9622
+garbage             : Avg similarity = 0.9623
+penny               : Avg similarity = 0.9625
+tree                : Avg similarity = 0.9625
+listen              : Avg similarity = 0.9627
+table               : Avg similarity = 0.9630
+say                 : Avg similarity = 0.9630
+high                : Avg similarity = 0.9632
+home                : Avg similarity = 0.9632
+bath                : Avg similarity = 0.9633
+grandma             : Avg similarity = 0.9635
+bad                 : Avg similarity = 0.9638
+gum                 : Avg similarity = 0.9638
+please              : Avg similarity = 0.9638
+thirsty             : Avg similarity = 0.9639
+black               : Avg similarity = 0.9639
+chair               : Avg similarity = 0.9642
+pig                 : Avg similarity = 0.9642
+jacket              : Avg similarity = 0.9643
+hear                : Avg similarity = 0.9643
+napkin              : Avg similarity = 0.9644
+boy                 : Avg similarity = 0.9645
+
+--- Top 100 Least Unique Signs (Most generic/central signs) ---
+(Higher average similarity to all other signs = Less Unique)
+tooth               : Avg similarity = 0.9693
+sleepy              : Avg similarity = 0.9693
+because             : Avg similarity = 0.9694
+chocolate           : Avg similarity = 0.9694
+jeans               : Avg similarity = 0.9695
+finish              : Avg similarity = 0.9695
+rain                : Avg similarity = 0.9696
+girl                : Avg similarity = 0.9696
+frog                : Avg similarity = 0.9696
+who                 : Avg similarity = 0.9697
+scissors            : Avg similarity = 0.9698
+farm                : Avg similarity = 0.9699
+shhh                : Avg similarity = 0.9700
+cut                 : Avg similarity = 0.9700
+kiss                : Avg similarity = 0.9700
+before              : Avg similarity = 0.9701
+snow                : Avg similarity = 0.9703
+hot                 : Avg similarity = 0.9703
+up                  : Avg similarity = 0.9705
+brown               : Avg similarity = 0.9706
+no                  : Avg similarity = 0.9708
+down                : Avg similarity = 0.9709
+hide                : Avg similarity = 0.9711
+stay                : Avg similarity = 0.9712
+time                : Avg similarity = 0.9712
+lion                : Avg similarity = 0.9714
+noisy               : Avg similarity = 0.9714
+lamp                : Avg similarity = 0.9715
+where               : Avg similarity = 0.9716
+outside             : Avg similarity = 0.9716
+closet              : Avg similarity = 0.9716
+mouth               : Avg similarity = 0.9717
+icecream            : Avg similarity = 0.9720
+ear                 : Avg similarity = 0.9720
+vacuum              : Avg similarity = 0.9721
+find                : Avg similarity = 0.9722
+toothbrush          : Avg similarity = 0.9722
+callonphone         : Avg similarity = 0.9722
+stuck               : Avg similarity = 0.9723
+store               : Avg similarity = 0.9723
+morning             : Avg similarity = 0.9724
+dryer               : Avg similarity = 0.9724
+orange              : Avg similarity = 0.9724
+milk                : Avg similarity = 0.9725
+child               : Avg similarity = 0.9725
+clown               : Avg similarity = 0.9725
+hesheit             : Avg similarity = 0.9726
+first               : Avg similarity = 0.9726
+toy                 : Avg similarity = 0.9727
+shoe                : Avg similarity = 0.9728
+old                 : Avg similarity = 0.9728
+if                  : Avg similarity = 0.9729
+bedroom             : Avg similarity = 0.9730
+pencil              : Avg similarity = 0.9731
+into                : Avg similarity = 0.9731
+room                : Avg similarity = 0.9732
+grass               : Avg similarity = 0.9733
+fine                : Avg similarity = 0.9733
+talk                : Avg similarity = 0.9733
+wait                : Avg similarity = 0.9734
+boat                : Avg similarity = 0.9734
+blow                : Avg similarity = 0.9734
+not                 : Avg similarity = 0.9735
+pizza               : Avg similarity = 0.9735
+cry                 : Avg similarity = 0.9735
+goose               : Avg similarity = 0.9736
+drawer              : Avg similarity = 0.9736
+snack               : Avg similarity = 0.9736
+close               : Avg similarity = 0.9737
+pretty              : Avg similarity = 0.9737
+drink               : Avg similarity = 0.9737
+clean               : Avg similarity = 0.9738
+open                : Avg similarity = 0.9738
+tomorrow            : Avg similarity = 0.9739
+face                : Avg similarity = 0.9739
+loud                : Avg similarity = 0.9740
+nap                 : Avg similarity = 0.9740
+lips                : Avg similarity = 0.9740
+feet                : Avg similarity = 0.9742
+mouse               : Avg similarity = 0.9742
+potty               : Avg similarity = 0.9743
+look                : Avg similarity = 0.9748
+stairs              : Avg similarity = 0.9748
+green               : Avg similarity = 0.9748
+blue                : Avg similarity = 0.9751
+glasswindow         : Avg similarity = 0.9751
+puzzle              : Avg similarity = 0.9752
+touch               : Avg similarity = 0.9752
+tiger               : Avg similarity = 0.9752
+yourself            : Avg similarity = 0.9753
+chin                : Avg similarity = 0.9753
+duck                : Avg similarity = 0.9758
+read                : Avg similarity = 0.9758
+bye                 : Avg similarity = 0.9759
+make                : Avg similarity = 0.9760
+cereal              : Avg similarity = 0.9763
+nose                : Avg similarity = 0.9764
+frenchfries         : Avg similarity = 0.9765
+later               : Avg similarity = 0.9766
+yes                 : Avg similarity = 0.9773
+
+--- Top 500 Most Similar Sign Pairs (High Confusion Risk) ---
+(Similarity near 1.0 means the sequences are nearly identical)
+1   . shhh            <--> who             : 0.9945
+2   . orange          <--> who             : 0.9943
+3   . lips            <--> chin            : 0.9938
+4   . boat            <--> child           : 0.9938
+5   . dryer           <--> zebra           : 0.9937
+6   . mouse           <--> tomorrow        : 0.9936
+7   . dryer           <--> mouse           : 0.9936
+8   . zebra           <--> tomorrow        : 0.9935
+9   . blue            <--> tomorrow        : 0.9934
+10  . pizza           <--> girl            : 0.9934
+11  . no              <--> hide            : 0.9933
+12  . frog            <--> icecream        : 0.9932
+13  . nap             <--> bedroom         : 0.9931
+14  . animal          <--> book            : 0.9931
+15  . book            <--> puppy           : 0.9931
+16  . shhh            <--> chin            : 0.9931
+17  . duck            <--> lips            : 0.9930
+18  . dryer           <--> blue            : 0.9929
+19  . duck            <--> goose           : 0.9929
+20  . who             <--> chin            : 0.9928
+21  . puzzle          <--> green           : 0.9928
+22  . zebra           <--> blue            : 0.9928
+23  . wake            <--> first           : 0.9927
+24  . nap             <--> stay            : 0.9927
+25  . tiger           <--> toy             : 0.9927
+26  . refrigerator    <--> book            : 0.9927
+27  . dry             <--> balloon         : 0.9926
+28  . nap             <--> snack           : 0.9925
+29  . nap             <--> jeans           : 0.9925
+30  . penny           <--> hen             : 0.9925
+31  . shhh            <--> chocolate       : 0.9925
+32  . zipper          <--> backyard        : 0.9924
+33  . lips            <--> first           : 0.9924
+34  . open            <--> blue            : 0.9924
+35  . refrigerator    <--> puppy           : 0.9924
+36  . stay            <--> bath            : 0.9923
+37  . green           <--> where           : 0.9923
+38  . yourself        <--> make            : 0.9922
+39  . chin            <--> yes             : 0.9922
+40  . wake            <--> snack           : 0.9922
+41  . bath            <--> story           : 0.9922
+42  . owie            <--> girl            : 0.9922
+43  . shoe            <--> green           : 0.9922
+44  . lips            <--> snack           : 0.9921
+45  . sad             <--> aunt            : 0.9921
+46  . lips            <--> nap             : 0.9921
+47  . who             <--> chocolate       : 0.9921
+48  . fall            <--> like            : 0.9921
+49  . bye             <--> nose            : 0.9921
+50  . look            <--> close           : 0.9921
+51  . stuck           <--> icecream        : 0.9921
+52  . look            <--> pizza           : 0.9920
+53  . clown           <--> cry             : 0.9920
+54  . hesheit         <--> happy           : 0.9920
+55  . farm            <--> lamp            : 0.9920
+56  . not             <--> stay            : 0.9919
+57  . lips            <--> if              : 0.9919
+58  . apple           <--> underwear       : 0.9919
+59  . duck            <--> first           : 0.9919
+60  . down            <--> bedroom         : 0.9919
+61  . noisy           <--> before          : 0.9918
+62  . callonphone     <--> child           : 0.9918
+63  . close           <--> if              : 0.9918
+64  . closet          <--> chocolate       : 0.9918
+65  . dryer           <--> tomorrow        : 0.9918
+66  . look            <--> green           : 0.9918
+67  . yes             <--> blue            : 0.9917
+68  . mouse           <--> blue            : 0.9917
+69  . look            <--> hot             : 0.9917
+70  . duck            <--> glasswindow     : 0.9917
+71  . duck            <--> chin            : 0.9917
+72  . where           <--> nose            : 0.9917
+73  . orange          <--> shhh            : 0.9917
+74  . toy             <--> talk            : 0.9916
+75  . animal          <--> home            : 0.9916
+76  . shirt           <--> haveto          : 0.9916
+77  . who             <--> napkin          : 0.9916
+78  . not             <--> bedroom         : 0.9916
+79  . hesheit         <--> talk            : 0.9916
+80  . bird            <--> balloon         : 0.9916
+81  . cheek           <--> flag            : 0.9916
+82  . hot             <--> before          : 0.9916
+83  . dryer           <--> girl            : 0.9916
+84  . nose            <--> cereal          : 0.9915
+85  . cereal          <--> glasswindow     : 0.9915
+86  . not             <--> nap             : 0.9915
+87  . water           <--> pencil          : 0.9915
+88  . stay            <--> bedroom         : 0.9915
+89  . where           <--> bye             : 0.9914
+90  . bird            <--> who             : 0.9914
+91  . wait            <--> blue            : 0.9914
+92  . callonphone     <--> boat            : 0.9914
+93  . chin            <--> if              : 0.9914
+94  . milk            <--> no              : 0.9914
+95  . lips            <--> glasswindow     : 0.9914
+96  . snack           <--> mouse           : 0.9914
+97  . if              <--> yes             : 0.9913
+98  . before          <--> chair           : 0.9913
+99  . bye             <--> goose           : 0.9913
+100 . shhh            <--> pig             : 0.9913
+101 . stuck           <--> frog            : 0.9913
+102 . drink           <--> cereal          : 0.9913
+103 . nap             <--> glasswindow     : 0.9913
+104 . bad             <--> haveto          : 0.9913
+105 . fine            <--> chin            : 0.9913
+106 . balloon         <--> kitty           : 0.9913
+107 . lips            <--> shhh            : 0.9912
+108 . child           <--> make            : 0.9912
+109 . story           <--> book            : 0.9912
+110 . chocolate       <--> blue            : 0.9912
+111 . child           <--> touch           : 0.9912
+112 . puzzle          <--> nose            : 0.9912
+113 . owie            <--> hot             : 0.9912
+114 . first           <--> glasswindow     : 0.9912
+115 . nap             <--> toothbrush      : 0.9912
+116 . if              <--> blue            : 0.9912
+117 . vacuum          <--> into            : 0.9912
+118 . puzzle          <--> stairs          : 0.9912
+119 . pizza           <--> tomorrow        : 0.9911
+120 . not             <--> open            : 0.9911
+121 . yourself        <--> read            : 0.9911
+122 . dryer           <--> fine            : 0.9911
+123 . drop            <--> on              : 0.9911
+124 . morning         <--> child           : 0.9911
+125 . pizza           <--> fine            : 0.9911
+126 . duck            <--> if              : 0.9911
+127 . first           <--> snack           : 0.9911
+128 . have            <--> gift            : 0.9911
+129 . nap             <--> if              : 0.9911
+130 . mitten          <--> story           : 0.9910
+131 . feet            <--> yes             : 0.9910
+132 . nose            <--> glasswindow     : 0.9910
+133 . frog            <--> cut             : 0.9910
+134 . down            <--> before          : 0.9910
+135 . mouse           <--> cereal          : 0.9910
+136 . mitten          <--> bedroom         : 0.9910
+137 . callonphone     <--> morning         : 0.9909
+138 . tiger           <--> talk            : 0.9909
+139 . hot             <--> chair           : 0.9909
+140 . look            <--> if              : 0.9909
+141 . zebra           <--> mouse           : 0.9909
+142 . zipper          <--> blue            : 0.9909
+143 . hesheit         <--> nose            : 0.9909
+144 . time            <--> drawer          : 0.9909
+145 . yellow          <--> finish          : 0.9909
+146 . bath            <--> puppy           : 0.9909
+147 . tiger           <--> chin            : 0.9909
+148 . first           <--> chin            : 0.9909
+149 . dryer           <--> if              : 0.9909
+150 . who             <--> police          : 0.9908
+151 . dry             <--> who             : 0.9908
+152 . stairs          <--> nose            : 0.9908
+153 . snack           <--> if              : 0.9908
+154 . fine            <--> tomorrow        : 0.9908
+155 . tiger           <--> goose           : 0.9908
+156 . dry             <--> cry             : 0.9908
+157 . apple           <--> carrot          : 0.9908
+158 . snack           <--> toothbrush      : 0.9908
+159 . orange          <--> chin            : 0.9907
+160 . pizza           <--> tooth           : 0.9907
+161 . frog            <--> tongue          : 0.9907
+162 . hen             <--> mouse           : 0.9907
+163 . snack           <--> mouth           : 0.9907
+164 . same            <--> tomorrow        : 0.9907
+165 . chocolate       <--> chin            : 0.9907
+166 . pencil          <--> any             : 0.9907
+167 . cheek           <--> hen             : 0.9907
+168 . water           <--> tongue          : 0.9907
+169 . fine            <--> blue            : 0.9907
+170 . jeans           <--> bedroom         : 0.9907
+171 . animal          <--> bath            : 0.9906
+172 . cry             <--> goose           : 0.9906
+173 . milk            <--> mouth           : 0.9906
+174 . duck            <--> yes             : 0.9906
+175 . where           <--> glasswindow     : 0.9906
+176 . stay            <--> story           : 0.9906
+177 . chin            <--> tomorrow        : 0.9906
+178 . cereal          <--> read            : 0.9906
+179 . potty           <--> tiger           : 0.9906
+180 . pizza           <--> bye             : 0.9906
+181 . milk            <--> happy           : 0.9906
+182 . closet          <--> yes             : 0.9906
+183 . zipper          <--> fast            : 0.9906
+184 . balloon         <--> chocolate       : 0.9906
+185 . owie            <--> fine            : 0.9906
+186 . wait            <--> zipper          : 0.9906
+187 . green           <--> nose            : 0.9906
+188 . puzzle          <--> shoe            : 0.9905
+189 . wake            <--> nap             : 0.9905
+190 . owie            <--> pizza           : 0.9905
+191 . minemy          <--> puppy           : 0.9905
+192 . stay            <--> animal          : 0.9905
+193 . stuck           <--> nose            : 0.9905
+194 . noisy           <--> give            : 0.9905
+195 . morning         <--> boat            : 0.9905
+196 . pencil          <--> tongue          : 0.9905
+197 . not             <--> same            : 0.9905
+198 . first           <--> ear             : 0.9905
+199 . drawer          <--> yes             : 0.9905
+200 . potty           <--> pencil          : 0.9905
+201 . green           <--> rain            : 0.9905
+202 . hot             <--> girl            : 0.9905
+203 . girl            <--> tomorrow        : 0.9905
+204 . hesheit         <--> potty           : 0.9904
+205 . first           <--> if              : 0.9904
+206 . if              <--> glasswindow     : 0.9904
+207 . callonphone     <--> touch           : 0.9904
+208 . finger          <--> cry             : 0.9904
+209 . backyard        <--> feet            : 0.9904
+210 . stay            <--> jeans           : 0.9904
+211 . no              <--> stairs          : 0.9904
+212 . pen             <--> home            : 0.9904
+213 . same            <--> snack           : 0.9904
+214 . chocolate       <--> tomorrow        : 0.9904
+215 . first           <--> nap             : 0.9904
+216 . open            <--> close           : 0.9904
+217 . snack           <--> glasswindow     : 0.9904
+218 . shirt           <--> bad             : 0.9904
+219 . green           <--> bye             : 0.9904
+220 . frog            <--> water           : 0.9904
+221 . bird            <--> dry             : 0.9904
+222 . bye             <--> tiger           : 0.9904
+223 . bath            <--> book            : 0.9904
+224 . bye             <--> glasswindow     : 0.9904
+225 . look            <--> tiger           : 0.9904
+226 . drink           <--> bye             : 0.9904
+227 . cloud           <--> awake           : 0.9903
+228 . brown           <--> bye             : 0.9903
+229 . dryer           <--> before          : 0.9903
+230 . underwear       <--> mouth           : 0.9903
+231 . scissors        <--> pencil          : 0.9903
+232 . mitten          <--> penny           : 0.9903
+233 . cry             <--> tiger           : 0.9903
+234 . animal          <--> puppy           : 0.9903
+235 . pizza           <--> tiger           : 0.9903
+236 . sleepy          <--> outside         : 0.9903
+237 . chocolate       <--> kitty           : 0.9903
+238 . underwear       <--> dirty           : 0.9903
+239 . nap             <--> bath            : 0.9902
+240 . look            <--> girl            : 0.9902
+241 . same            <--> dirty           : 0.9902
+242 . duck            <--> nap             : 0.9902
+243 . chin            <--> glasswindow     : 0.9902
+244 . yes             <--> lamp            : 0.9902
+245 . drawer          <--> feet            : 0.9902
+246 . closet          <--> first           : 0.9902
+247 . frenchfries     <--> bye             : 0.9902
+248 . animal          <--> refrigerator    : 0.9902
+249 . close           <--> glasswindow     : 0.9902
+250 . balloon         <--> cry             : 0.9902
+251 . wait            <--> yourself        : 0.9902
+252 . pretty          <--> touch           : 0.9902
+253 . before          <--> bedroom         : 0.9902
+254 . nuts            <--> cereal          : 0.9902
+255 . frenchfries     <--> touch           : 0.9902
+256 . drawer          <--> yourself        : 0.9902
+257 . frog            <--> pencil          : 0.9901
+258 . food            <--> underwear       : 0.9901
+259 . tomorrow        <--> glasswindow     : 0.9901
+260 . TV              <--> boat            : 0.9901
+261 . chocolate       <--> pig             : 0.9901
+262 . touch           <--> make            : 0.9901
+263 . zipper          <--> drawer          : 0.9901
+264 . puzzle          <--> no              : 0.9901
+265 . look            <--> snack           : 0.9901
+266 . nap             <--> mouse           : 0.9901
+267 . zebra           <--> girl            : 0.9901
+268 . same            <--> mouse           : 0.9901
+269 . apple           <--> awake           : 0.9901
+270 . dry             <--> chocolate       : 0.9901
+271 . mouse           <--> bedroom         : 0.9901
+272 . night           <--> stay            : 0.9901
+273 . tooth           <--> chin            : 0.9901
+274 . book            <--> home            : 0.9901
+275 . bye             <--> yes             : 0.9901
+276 . bath            <--> jeans           : 0.9901
+277 . nap             <--> home            : 0.9901
+278 . first           <--> yes             : 0.9901
+279 . finish          <--> touch           : 0.9900
+280 . yes             <--> make            : 0.9900
+281 . closet          <--> blue            : 0.9900
+282 . zipper          <--> zebra           : 0.9900
+283 . puzzle          <--> not             : 0.9900
+284 . green           <--> close           : 0.9900
+285 . listen          <--> why             : 0.9900
+286 . down            <--> toothbrush      : 0.9900
+287 . hesheit         <--> stairs          : 0.9900
+288 . pencil          <--> icecream        : 0.9900
+289 . zebra           <--> pig             : 0.9900
+290 . wake            <--> rain            : 0.9900
+291 . nuts            <--> pajamas         : 0.9900
+292 . chocolate       <--> zebra           : 0.9900
+293 . not             <--> tomorrow        : 0.9900
+294 . frenchfries     <--> yes             : 0.9900
+295 . shoe            <--> milk            : 0.9900
+296 . kiss            <--> yes             : 0.9900
+297 . tiger           <--> glasswindow     : 0.9900
+298 . find            <--> touch           : 0.9900
+299 . bye             <--> radio           : 0.9900
+300 . clown           <--> orange          : 0.9899
+301 . balloon         <--> who             : 0.9899
+302 . orange          <--> blue            : 0.9899
+303 . callonphone     <--> pretty          : 0.9899
+304 . fine            <--> yes             : 0.9899
+305 . snack           <--> bedroom         : 0.9899
+306 . toy             <--> close           : 0.9899
+307 . later           <--> make            : 0.9899
+308 . bird            <--> orange          : 0.9899
+309 . shhh            <--> tomorrow        : 0.9899
+310 . open            <--> bedroom         : 0.9899
+311 . look            <--> bye             : 0.9899
+312 . talk            <--> glasswindow     : 0.9899
+313 . frog            <--> talk            : 0.9899
+314 . green           <--> snack           : 0.9899
+315 . water           <--> icecream        : 0.9899
+316 . chin            <--> lamp            : 0.9899
+317 . clown           <--> yes             : 0.9899
+318 . hen             <--> snack           : 0.9899
+319 . stay            <--> toothbrush      : 0.9899
+320 . closet          <--> chin            : 0.9899
+321 . snack           <--> close           : 0.9899
+322 . boat            <--> touch           : 0.9899
+323 . wait            <--> read            : 0.9899
+324 . give            <--> chair           : 0.9899
+325 . potty           <--> bye             : 0.9899
+326 . shoe            <--> frenchfries     : 0.9899
+327 . tiger           <--> nose            : 0.9899
+328 . nap             <--> mouth           : 0.9899
+329 . snack           <--> chin            : 0.9899
+330 . not             <--> mouse           : 0.9899
+331 . brother         <--> morning         : 0.9899
+332 . penny           <--> flag            : 0.9899
+333 . closet          <--> if              : 0.9899
+334 . fine            <--> girl            : 0.9899
+335 . clown           <--> kiss            : 0.9898
+336 . cry             <--> chin            : 0.9898
+337 . talk            <--> cereal          : 0.9898
+338 . blue            <--> helicopter      : 0.9898
+339 . duck            <--> bye             : 0.9898
+340 . shoe            <--> no              : 0.9898
+341 . pizza           <--> blue            : 0.9898
+342 . dry             <--> kitty           : 0.9898
+343 . stay            <--> book            : 0.9898
+344 . owie            <--> dryer           : 0.9898
+345 . if              <--> tomorrow        : 0.9898
+346 . fall            <--> person          : 0.9898
+347 . toy             <--> glasswindow     : 0.9898
+348 . hesheit         <--> cereal          : 0.9898
+349 . green           <--> down            : 0.9898
+350 . lips            <--> yes             : 0.9898
+351 . night           <--> mouth           : 0.9897
+352 . clean           <--> frenchfries     : 0.9897
+353 . lips            <--> mouse           : 0.9897
+354 . potty           <--> toy             : 0.9897
+355 . mouse           <--> glasswindow     : 0.9897
+356 . open            <--> tomorrow        : 0.9897
+357 . toy             <--> chin            : 0.9897
+358 . scissors        <--> any             : 0.9897
+359 . yellow          <--> thirsty         : 0.9897
+360 . hot             <--> mouse           : 0.9897
+361 . milk            <--> cereal          : 0.9897
+362 . grass           <--> stairs          : 0.9897
+363 . not             <--> snack           : 0.9897
+364 . chin            <--> goose           : 0.9897
+365 . frenchfries     <--> make            : 0.9897
+366 . go              <--> can             : 0.9897
+367 . bedroom         <--> toothbrush      : 0.9897
+368 . milk            <--> toothbrush      : 0.9897
+369 . open            <--> yes             : 0.9896
+370 . wake            <--> ear             : 0.9896
+371 . nose            <--> icecream        : 0.9896
+372 . into            <--> room            : 0.9896
+373 . duck            <--> drink           : 0.9896
+374 . awake           <--> carrot          : 0.9896
+375 . who             <--> pig             : 0.9896
+376 . time            <--> yourself        : 0.9896
+377 . green           <--> glasswindow     : 0.9896
+378 . tiger           <--> lion            : 0.9896
+379 . penny           <--> bedroom         : 0.9896
+380 . stay            <--> mouth           : 0.9896
+381 . bye             <--> cereal          : 0.9896
+382 . stuck           <--> cereal          : 0.9896
+383 . toy             <--> later           : 0.9896
+384 . story           <--> bedroom         : 0.9896
+385 . yellow          <--> callonphone     : 0.9896
+386 . pizza           <--> toy             : 0.9896
+387 . wait            <--> before          : 0.9896
+388 . kiss            <--> blue            : 0.9896
+389 . cloud           <--> apple           : 0.9896
+390 . fine            <--> zebra           : 0.9896
+391 . shhh            <--> zebra           : 0.9896
+392 . time            <--> feet            : 0.9896
+393 . any             <--> taste           : 0.9896
+394 . lips            <--> orange          : 0.9896
+395 . before          <--> mouse           : 0.9896
+396 . morning         <--> touch           : 0.9896
+397 . look            <--> toy             : 0.9896
+398 . shhh            <--> ear             : 0.9896
+399 . wake            <--> if              : 0.9896
+400 . finish          <--> grandma         : 0.9896
+401 . before          <--> give            : 0.9896
+402 . chocolate       <--> if              : 0.9896
+403 . kiss            <--> girl            : 0.9896
+404 . lips            <--> ear             : 0.9895
+405 . rain            <--> cow             : 0.9895
+406 . fast            <--> jeans           : 0.9895
+407 . lips            <--> wake            : 0.9895
+408 . stay            <--> close           : 0.9895
+409 . not             <--> if              : 0.9895
+410 . no              <--> toothbrush      : 0.9895
+411 . mouse           <--> yes             : 0.9895
+412 . boat            <--> make            : 0.9895
+413 . potty           <--> talk            : 0.9895
+414 . nap             <--> blue            : 0.9895
+415 . drink           <--> nuts            : 0.9895
+416 . shoe            <--> toothbrush      : 0.9895
+417 . finger          <--> hear            : 0.9895
+418 . jeans           <--> blue            : 0.9895
+419 . look            <--> where           : 0.9895
+420 . vacuum          <--> pool            : 0.9895
+421 . wake            <--> glasswindow     : 0.9895
+422 . not             <--> dryer           : 0.9895
+423 . close           <--> tomorrow        : 0.9895
+424 . aunt            <--> mouth           : 0.9895
+425 . owl             <--> kitty           : 0.9895
+426 . drink           <--> nose            : 0.9895
+427 . bird            <--> cry             : 0.9895
+428 . duck            <--> ear             : 0.9895
+429 . wait            <--> dryer           : 0.9894
+430 . chin            <--> blue            : 0.9894
+431 . closet          <--> shhh            : 0.9894
+432 . dryer           <--> hen             : 0.9894
+433 . blow            <--> yourself        : 0.9894
+434 . story           <--> puppy           : 0.9894
+435 . haveto          <--> room            : 0.9894
+436 . cry             <--> yes             : 0.9894
+437 . close           <--> mouth           : 0.9894
+438 . yes             <--> tomorrow        : 0.9894
+439 . dryer           <--> yes             : 0.9894
+440 . shoe            <--> stairs          : 0.9894
+441 . same            <--> hen             : 0.9894
+442 . if              <--> mouse           : 0.9894
+443 . lips            <--> tomorrow        : 0.9894
+444 . nap             <--> tomorrow        : 0.9894
+445 . girl            <--> mouse           : 0.9894
+446 . wake            <--> moon            : 0.9894
+447 . look            <--> nose            : 0.9894
+448 . uncle           <--> pretend         : 0.9894
+449 . shhh            <--> blue            : 0.9894
+450 . go              <--> any             : 0.9894
+451 . jacket          <--> cut             : 0.9894
+452 . chin            <--> ear             : 0.9894
+453 . pizza           <--> chin            : 0.9894
+454 . look            <--> glasswindow     : 0.9894
+455 . green           <--> dog             : 0.9894
+456 . drawer          <--> open            : 0.9894
+457 . wait            <--> open            : 0.9894
+458 . store           <--> head            : 0.9893
+459 . water           <--> taste           : 0.9893
+460 . nap             <--> chin            : 0.9893
+461 . not             <--> green           : 0.9893
+462 . duck            <--> nose            : 0.9893
+463 . dryer           <--> snack           : 0.9893
+464 . black           <--> pretend         : 0.9893
+465 . nap             <--> yes             : 0.9893
+466 . yourself        <--> later           : 0.9893
+467 . dryer           <--> hot             : 0.9893
+468 . alligator       <--> flag            : 0.9893
+469 . shhh            <--> dryer           : 0.9893
+470 . pizza           <--> kiss            : 0.9893
+471 . talk            <--> chin            : 0.9893
+472 . brown           <--> potty           : 0.9893
+473 . hen             <--> bedroom         : 0.9893
+474 . wait            <--> fast            : 0.9893
+475 . owie            <--> look            : 0.9893
+476 . brother         <--> go              : 0.9893
+477 . vacuum          <--> hide            : 0.9893
+478 . down            <--> chair           : 0.9893
+479 . shhh            <--> napkin          : 0.9893
+480 . later           <--> yes             : 0.9893
+481 . milk            <--> stay            : 0.9893
+482 . wake            <--> cow             : 0.9893
+483 . before          <--> outside         : 0.9892
+484 . yourself        <--> yes             : 0.9892
+485 . lion            <--> goose           : 0.9892
+486 . where           <--> hesheit         : 0.9892
+487 . talk            <--> goose           : 0.9892
+488 . drink           <--> stairs          : 0.9892
+489 . cry             <--> yucky           : 0.9892
+490 . minemy          <--> refrigerator    : 0.9892
+491 . bird            <--> doll            : 0.9892
+492 . all             <--> pen             : 0.9892
+493 . yes             <--> touch           : 0.9892
+494 . milk            <--> nap             : 0.9892
+495 . hot             <--> give            : 0.9892
+496 . stay            <--> home            : 0.9892
+497 . can             <--> gift            : 0.9892
+498 . happy           <--> mouth           : 0.9892
+499 . drawer          <--> fast            : 0.9892
+500 . snack           <--> nose            : 0.9892

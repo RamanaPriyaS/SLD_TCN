@@ -1,0 +1,61 @@
+Sign Similarity Analysis Report
+===============================
+
+--- Uniqueness Profile (Most to Least Unique) ---
+pretend        : Avg similarity = 0.9860
+donkey         : Avg similarity = 0.9862
+shhh           : Avg similarity = 0.9880
+bird           : Avg similarity = 0.9889
+look           : Avg similarity = 0.9891
+mouse          : Avg similarity = 0.9908
+hear           : Avg similarity = 0.9913
+uncle          : Avg similarity = 0.9918
+duck           : Avg similarity = 0.9925
+listen         : Avg similarity = 0.9926
+
+--- All Pairwise Similarities (Most to Least Similar) ---
+duck       <--> mouse      : 0.9973
+mouse      <--> shhh       : 0.9972
+bird       <--> duck       : 0.9968
+hear       <--> listen     : 0.9968
+duck       <--> shhh       : 0.9963
+listen     <--> uncle      : 0.9962
+bird       <--> mouse      : 0.9960
+duck       <--> uncle      : 0.9945
+donkey     <--> listen     : 0.9944
+hear       <--> pretend    : 0.9942
+hear       <--> look       : 0.9935
+duck       <--> listen     : 0.9934
+donkey     <--> uncle      : 0.9933
+bird       <--> shhh       : 0.9931
+listen     <--> pretend    : 0.9930
+hear       <--> uncle      : 0.9920
+duck       <--> look       : 0.9919
+bird       <--> uncle      : 0.9917
+listen     <--> look       : 0.9915
+look       <--> mouse      : 0.9914
+duck       <--> hear       : 0.9912
+donkey     <--> hear       : 0.9906
+listen     <--> mouse      : 0.9906
+look       <--> uncle      : 0.9905
+mouse      <--> uncle      : 0.9904
+hear       <--> mouse      : 0.9903
+bird       <--> listen     : 0.9902
+pretend    <--> uncle      : 0.9897
+look       <--> shhh       : 0.9896
+donkey     <--> pretend    : 0.9887
+shhh       <--> uncle      : 0.9879
+look       <--> pretend    : 0.9877
+hear       <--> shhh       : 0.9873
+listen     <--> shhh       : 0.9873
+donkey     <--> duck       : 0.9867
+bird       <--> look       : 0.9855
+bird       <--> hear       : 0.9855
+duck       <--> pretend    : 0.9840
+bird       <--> donkey     : 0.9832
+mouse      <--> pretend    : 0.9824
+donkey     <--> mouse      : 0.9815
+donkey     <--> look       : 0.9803
+bird       <--> pretend    : 0.9784
+donkey     <--> shhh       : 0.9770
+pretend    <--> shhh       : 0.9760
